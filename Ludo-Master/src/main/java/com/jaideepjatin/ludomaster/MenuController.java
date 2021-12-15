@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class HelloController {
+public class MenuController {
 
     @FXML
     public Button localMultiplayer;

@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class ChoosingNameAndColor {
     static void display() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloController.class.getResource("choosing-name-and-color.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MenuController.class.getResource("choosing-name-and-color.fxml"));
         Scene scene = new Scene(fxmlLoader.load(),320, 240);
         Stage stage = new Stage();
 
