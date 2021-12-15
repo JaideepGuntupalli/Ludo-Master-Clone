@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.jaideepjatin.ludomaster.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jaideepjatin.ludomaster.HelloController">
+    <children>
+        <Label layoutX="173.0" layoutY="49.0" prefHeight="18.0" prefWidth="30.0" text="Ludo" />
+        <Label layoutX="168.0" layoutY="69.0" text="Master" />
+        <Button fx:id="localMultiplayer" layoutX="121.0" layoutY="384.0" mnemonicParsing="false" onAction="#print" prefHeight="51.0" prefWidth="144.0" text="Local Multiplayer" />
+    </children>
+</AnchorPane>

@@ -1,14 +1,18 @@
 package com.jaideepjatin.ludomaster;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+
+import java.io.IOException;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public Button localMultiplayer;
+
+    @FXML
+    protected void print(ActionEvent e) throws IOException {
+        ChoosingNameAndColor.display();
     }
 }
