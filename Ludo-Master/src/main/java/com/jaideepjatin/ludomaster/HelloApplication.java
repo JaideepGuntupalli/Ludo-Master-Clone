@@ -18,8 +18,8 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 
-//        Image logo = new Image("logo.png");
-//        stage.getIcons().add(logo);
+        Image logo = new Image("ludo-master-logo.jpg");
+        stage.getIcons().add(logo);
         stage.setTitle("Hello!");
         stage.setHeight(812);
         stage.setWidth(375);
