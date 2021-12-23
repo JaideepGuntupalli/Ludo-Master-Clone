@@ -1,38 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jaideepjatin.ludomaster.ChoosingNameAndColorController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jaideepjatin.ludomaster.ChoosingNameAndColorController">
 <children>
-    <Label layoutX="70.0" layoutY="66.0" text="Choose Color And Name" />
-    <Button fx:id="playButton" layoutX="172.0" layoutY="423.0" mnemonicParsing="false" onAction="#play" text="Play" />
-    <Button fx:id="backButton" layoutX="69.0" layoutY="423.0" mnemonicParsing="false" onAction="#close" text="Back" />
-    <TextField fx:id="p1Name" layoutX="93.0" layoutY="160.0" prefHeight="26.0" prefWidth="89.0" promptText="Player 1" />
-    <TextField fx:id="p2Name" layoutX="93.0" layoutY="194.0" prefHeight="26.0" prefWidth="89.0" promptText="Player 2" />
-    <Label layoutX="88.0" layoutY="130.0" text="Enter Your Names" />
-    <GridPane layoutX="83.0" layoutY="272.0" prefHeight="83.0" prefWidth="109.0">
+      <ImageView fitHeight="472.0" fitWidth="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/local-play/local-play-form.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redYellow" fitHeight="171.0" fitWidth="201.0" layoutX="57.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/local-play/red-yellow.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueGreen" fitHeight="165.0" fitWidth="210.0" layoutX="57.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/local-play/blue-green.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="72.0" layoutY="148.0" prefHeight="47.0" prefWidth="179.0">
         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.91378784179688" minWidth="10.0" prefWidth="54.44397735595703" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.94397735595703" minWidth="10.0" prefWidth="119.05602264404297" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints maxHeight="35.105499267578125" minHeight="0.0" prefHeight="28.932708740234375" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="31.567291259765625" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
-        <children>
-            <RadioButton fx:id="blueAndGreen" mnemonicParsing="false" prefHeight="22.0" prefWidth="129.0" text="Blue and Green">
-                <toggleGroup>
-                    <ToggleGroup fx:id="Color" />
-                </toggleGroup></RadioButton>
-            <RadioButton fx:id="redAndYellow" mnemonicParsing="false" text="Red and Yellow" toggleGroup="$Color" GridPane.rowIndex="1" />
-        </children>
-    </GridPane>
+         <children>
+            <CheckBox fx:id="ColorBG" mnemonicParsing="false" onAction="#blueAndGreen" opacity="0.0" prefHeight="31.0" prefWidth="5.0" selected="true" GridPane.rowIndex="1" />
+          <TextField fx:id="p1NameBG" prefHeight="26.0" prefWidth="120.0" promptText="Player 1" style="-fx-background-color: transparent; -fx-text-fill: white;" GridPane.columnIndex="1" />
+          <TextField fx:id="p2NameBG" prefHeight="26.0" prefWidth="98.0" promptText="Player 2" style="-fx-background-color: transparent; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="71.0" layoutY="242.0" prefHeight="47.0" prefWidth="179.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.91378784179688" minWidth="10.0" prefWidth="54.44397735595703" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.94397735595703" minWidth="10.0" prefWidth="119.05602264404297" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <CheckBox fx:id="ColorRY" mnemonicParsing="false" onAction="#redAndYellow" opacity="0.0" prefHeight="18.0" prefWidth="45.0" GridPane.rowIndex="1" />
+            <TextField fx:id="p1NameRY" prefHeight="26.0" prefWidth="120.0" promptText="Player 1" style="-fx-background-color: transparent; -fx-text-fill: white;" visible="false" GridPane.columnIndex="1" />
+            <TextField fx:id="p2NameRY" prefHeight="26.0" prefWidth="98.0" promptText="Player 2" style="-fx-background-color: transparent; -fx-text-fill: white;" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+    <Button fx:id="playButton" layoutX="160.0" layoutY="386.0" mnemonicParsing="false" onAction="#play" opacity="0.0" prefHeight="26.0" prefWidth="90.0" text="Play" />
+    <Button fx:id="backButton" layoutX="139.0" layoutY="438.0" mnemonicParsing="false" onAction="#close" opacity="0.0" prefHeight="26.0" prefWidth="34.0" text="Back" />
+      <ImageView fx:id="magicPropsImg" fitHeight="26.0" fitWidth="34.0" layoutX="67.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/local-play/Magic-Props.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="magicProps" layoutX="73.0" layoutY="55.0" mnemonicParsing="false" onAction="#magicProps" opacity="0.0" />
 </children>
 </AnchorPane>

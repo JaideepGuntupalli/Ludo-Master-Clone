@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jaideepjatin.ludomaster.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="783.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="377.0" />
+   </children>
+</AnchorPane>
