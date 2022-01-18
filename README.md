@@ -5,7 +5,7 @@ Popular Play Store App Ludo Master clone for Desktop with Local 2-player Multipl
 - Developed using Java and JavaFX.
 - We used scene builder for making the ui of the app.
 - It has currently only local 2 player multiplayer support.
-- You can checkout UML diagram at [`/uml-diagram/UML class.png`](/uml-diagram/UML class.png "UML Class Diagram")
+- You can checkout UML diagram at [/uml-diagram/UML class.png](/uml-diagram/UML class.png "UML Class Diagram")
 - Hope to include online option in the future when I learn about sockets and networking.
 
 ## What did I learn?
