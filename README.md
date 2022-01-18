@@ -13,6 +13,10 @@ Popular Play Store App Ludo Master clone for Desktop with Local 2-player Multipl
 - Learned how to use `JavaFX`.
 - Learned `multi-threaded programming`.
 
+## To Run it in your local machine
+- You need to have [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) installed on your local machine.
+- You also need to have [JavaFX SDK](https://gluonhq.com/products/javafx/) installed on your machine.
+
 ## App Screenshots
 
 Home Screen                |  Menu
