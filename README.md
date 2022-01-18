@@ -2,16 +2,16 @@
 Popular Play Store App Ludo Master clone for Desktop with Local 2-player Multiplayer game mode developed using Java and JavaFX.
 
 ## Project Description
-- Developed using Java and JavaFX.
-- We used scene builder for making the ui of the app.
-- It has currently only local 2 player multiplayer support.
+- Developed using `Java` and `JavaFX`.
+- We used `Scene builder` for making the ui of the app.
+- It has currently only `Local 2 player multiplayer` support.
 - You can checkout UML diagram at `/uml-diagram/UML class.png`
 - Hope to include online option in the future when I learn about sockets and networking.
 
 ## What did I learn?
-- Learned how to use Object Oriented Programming in a production level application.
-- Learned how to use JavaFX.
-- Learned multi-threaded programming.
+- Learned how to use `Object Oriented Programming` in a production level application.
+- Learned how to use `JavaFX`.
+- Learned `multi-threaded programming`.
 
 ## App Screenshots
 
