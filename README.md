@@ -1,2 +1,2 @@
 # Ludo-Master-Clone
-Ludo Master's Local 2 player Multiplayer clone using JavaFX
+Popular Play Store App Ludo Master clone for Desktop with Local 2-player Multiplayer game mode developed using Java and JavaFX.
